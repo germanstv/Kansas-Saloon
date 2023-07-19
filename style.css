@@ -1,0 +1,173 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Kansas';
+    src: url(./fonts/Cowboy\ Movie.ttf);
+}
+@font-face {
+    font-family: 'parrafos';
+    src: url(./fonts/Stay\ Dreaming.otf);
+}
+
+@font-face {
+    font-family: 'western';
+    src: url(./fonts/Los\ Banditos\ Serif\ demo.otf);
+}
+body{
+    background-image: url(./imagenes//Red\ Dead\ Redemption\ Inspired\ Saloon\ Created\ in\ Unreal\ Engine\ 4.png);
+    backdrop-filter: blur(3px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    padding: 30px;
+}
+
+.tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    height: 600px;
+    width: 900px;
+    border-radius: 10px;
+}
+
+ul{
+    margin-top: 10px;
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+li{
+    text-shadow: 2px 1px 2px  rgba(21, 3, 3, 0.886);
+    font-family: 'western';
+}
+
+h1{
+    font-size: 70px;
+    letter-spacing: 5px;
+    font-family: 'Kansas';
+    color: rgba(21, 3, 3, 0.886);
+    text-shadow: 1px 1px 4px whitesmoke;
+    margin-top: -80px;
+}
+
+#kansas{
+    margin-right: 100px;
+}
+
+p{
+    font-family: 'parrafos';
+    color: antiquewhite;
+    text-shadow: 1px 2px 1px #2c1010 ;
+    font-size: 45px;
+    margin-top: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    
+}
+
+.logo{
+    position: absolute;
+    top: 13px;
+    width: 80px;
+}
+
+.icons{
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    bottom: 90%;
+    left: 90%;
+    gap: 3px;
+}
+.card-top{
+    position: relative;
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(./imagenes/portada.jpeg);
+    background-size:100%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+ }
+
+/* slider */
+@keyframes slider {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-25%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    75%{
+        transform: translateX(-75%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.card-bottom{
+    background-color: rgba(0, 0, 0, 0.572);
+    height: 270px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: slider;
+    animation-duration: 20s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    gap: 10pc;
+}
+
+.slider img{
+    padding: 5px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.slider-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    font-family: 'western';
+    text-align: center;
+    color: antiquewhite;
+    text-shadow: 2px 1px 1px  rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-size: 12px;
+}
