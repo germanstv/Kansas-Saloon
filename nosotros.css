@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Kansas';
+    src: url(./fonts/Cowboy\ Movie.ttf);
+}
+
+@font-face {
+    font-family: 'western';
+    src: url(./fonts/Los\ Banditos\ Serif\ demo.otf);
+}
+
+header, .tittle, main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-image: url(./imagenes/descargar\ \(1\).jpg);
+    background-size:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+h1{
+    font-family: 'kansas';
+    font-size: 70px;
+    letter-spacing: 5px;
+    color: rgba(21, 3, 3, 0.886);
+    text-shadow: 1px 1px 4px whitesmoke;
+}
+
+p{
+    font-family: 'western';
+    font-size: 18px;
+    width: 500px;
+    color: antiquewhite;
+    text-shadow: 3px 2px 1px black;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+span{
+    color: #3B1A1B;
+    text-shadow: 1px 1px 3px antiquewhite;
+}
+
+/*Slider*/
+
+@keyframes scroll {
+    0% {
+
+        transform: translateX(600px);
+    }
+
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+
+.slider{
+    background-color: rgba(0, 0, 0, 0.500);
+    box-shadow: 3px 2px  7px 1px #3B1A1B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 500px;
+    border-radius: 20px;
+    gap: 100px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#slide1, #slide2, #slide3{
+    animation: scroll 45s linear infinite;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+
